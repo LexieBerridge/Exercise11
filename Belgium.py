@@ -13,5 +13,9 @@ print(Commabelgium)
 
 # population of belgium plus the capital population
 
-print("Population of Belgium:", Belgium[8:16], "Capital city:", Belgium[17:25], "Capital population:", Belgium[26:32])
-print("Population of Belgium plus the Capital:", (int(Belgium[8:16])+int(Belgium[26:32])))
+
+belgiumlist = Belgium.split(",")  #Alternative way of splitting list by :
+Commalist = ":".join(belgiumlist)
+print(Commalist)
+print("Population of Belgium:", belgiumlist[1], "Capital city:", belgiumlist[2], "Capital population:", belgiumlist[3])
+print("Population of Belgium plus the Capital:", (int(belgiumlist[1])+int(belgiumlist[3])))
